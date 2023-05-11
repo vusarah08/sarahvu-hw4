@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+
+<htm1 lang="en"> 
+    <head> 
+    <link rel="stylesheet" href="homework4.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vu Medical Group</title>
+        <script src = "homework4.js"></script>
+        <link rel="stylesheet" href="homework4.css">
+        <title>Current Date</title>
+        <style>
+            #currentDate {
+                color: rgb(158, 97, 117);
+                font-family: monospace;
+                font-size: 30px;
+                font-weight: bold;
+
+            }
+        </style>
+        <script>
+            function displayDate() {
+                var date = new Date();
+                var options = {year: 'numeric', month: '2-digit', day: '2-digit' };
+                var dateString = date.toLocaleDateString('en-US', options);
+            document.getElementById("currentDate").innerHTML = dateString;
+            }
+
+
+        </script>
+
+</head> 
+<body onload="displayDate()()">
+
+    <img src="heartlogo.png" alt="homelogo" height="200px";>
+    <h1>Vu Medical Group</h1>
+    <h2>Today's Date:</h2>
+    <p id="currentDate"></p>
+    <span id = "greeting"></span>
+    <div class="header" id="myHeader">
+        <h3>Medical Registration Form</h3>
+
+    </div>
+
+
+        <script src = "cookies.js"></script>
+
+        <iframe src = "homework4.html" height = "1000" width = "2000" title = "Form"></iframe>
+
+        <iframe src = "footer.html"  width = "2000" title = "Page Footer"></iframe>
+
+
+</body>
+
+</htm1>
